@@ -1,0 +1,20 @@
+description: "Deterministic – contains"
+providers:
+  - openai:gpt-4o-mini
+  - anthropic:messages:claude-opus-4-1-20250805
+
+prompts:
+  - "Greet the user in {{eg}} and {{eg}}"
+
+tests:
+  - vars:
+      eg: French, Hindi
+  - assert:
+      - type: contains          # pass if substring present
+        value: "Bonjour"
+      - type: icontains
+        value: "नमस्ते"           # pass if substring present, case insensitive
+        
+                
+
+         

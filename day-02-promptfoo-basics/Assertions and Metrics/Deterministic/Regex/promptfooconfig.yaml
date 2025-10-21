@@ -1,0 +1,18 @@
+description: "Deterministic – regex"
+providers:
+  - openai:gpt-4o-mini
+
+prompts:
+  - "In which year was the {{language}} language first released? "
+
+tests:
+  - vars: 
+      language: Python
+      assert:
+      - type: regex             # must match 1995 exactly
+        value: "1995"
+  - vars:
+       language: JavaScript
+       assert: 
+       - type: regex
+         value: 2003           # must match 2003 exactly

@@ -1,0 +1,6 @@
+Model Name,Cost,Latency(ms),Final Cost (×100K),Cost Efficiency
+openai:gpt-4o-mini,0.0003,10309,34.9350,0.0034
+openai:gpt-4o,0.0043,8144,427.2500,0.0525
+openai:gpt-5,0.0142,26076,1417.5000,0.0544
+anthropic:claude-sonnet-4-5-20250929,0.0072,12342,723.0000,0.0586
+anthropic:claude-sonnet-4-20250514,0.0073,12435,729.0000,0.0586

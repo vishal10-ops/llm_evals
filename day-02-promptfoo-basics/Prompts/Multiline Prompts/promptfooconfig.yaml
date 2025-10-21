@@ -1,0 +1,29 @@
+description: "Multiline prompt demo"
+providers:
+  - openai:gpt-4o                                 # OpenAI model ID
+  - anthropic:messages:claude-sonnet-4-20250514   # Claude Sonnet model ID
+
+prompts:
+  - |-
+    You are a helpful assistant.
+
+    Please answer the following question:
+    {{question}}
+
+    Provide a detailed explanation.
+
+
+
+tests:
+  - vars:
+      question: "Why is the sky blue?"
+    assert:
+      - type: assert-set
+        threshold: 0.5
+        assert:
+          - type: llm-rubric
+            value: "Response is detailed and informative."
+          - type: factuality
+            value: "The sky appears blue due to the scattering of sunlight by the atmosphere."
+      - type: icontains
+        value: "sky"

@@ -1,0 +1,54 @@
+description: "Cost evaluation for model usage"
+
+providers:
+  - openai:gpt-4o-mini
+  - openai:gpt-4o
+  - openai:gpt-5
+  - anthropic:claude-sonnet-4-5-20250929
+  - anthropic:claude-sonnet-4-20250514
+
+prompts:
+  - |-
+      character_name: "Luna"
+      magical_item: "Mermaid Tail"
+      place: "Underground Cave"
+      problem: "Breaking a Spell"
+      ending: "Discovering Hidden Powers"
+
+      You are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.
+      Your task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.
+
+      Instructions:
+      1. Write a fun and age-appropriate story that includes all of the inputs.
+      2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.
+      3. Include friendly emojis to make the story visually engaging.
+      4. Start the story with a catchy title in this format:
+         "**{{character_name}}'s Adventure: {{problem}} in the {{place}}**"
+      5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.
+      6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.
+      7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).
+      8. The story should read like a bedtime tale and feel magical and uplifting.
+      9. Use simple paragraph structure (2–4 sentences per paragraph).
+
+      Output:
+      Return the full story in rich text (Markdown or HTML allowed).
+      Include emojis relevant to nature, magic, and emotions throughout the story.
+      Do not include any setup text, only the story output.
+
+tests:
+  - assert:
+      - type: llm-rubric
+        value: "Story follows the required title format with character name and problem/place"
+      - type: cost
+        threshold: 0.01
+      - type: cost
+        threshold: 0.001
+ 
+  # Scenario: lets assume we run 100K request through each model for a month, what would be the cost?
+  #openai:gpt-4o-mini.  ---                 $0.00032 * 100K =$32
+  #- openai:gpt-4o.                          $0.0046*100K = $460
+  #- openai:gpt-5                             $0.014*100K = $1400
+  #- anthropic:claude-sonnet-4-5-20250929.    $0.0072*100K = $720
+  # - anthropic:claude-sonnet-4-20250514       $0.0073*100K = $730
+  # Scenario 2: lets assume we run 100K*12=1200K request through each model for a year , what would be the cost?
+

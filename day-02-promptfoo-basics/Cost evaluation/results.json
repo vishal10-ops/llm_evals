@@ -1,0 +1,857 @@
+{
+  "evalId": "eval-6Lp-2025-10-16T21:54:37",
+  "results": {
+    "version": 3,
+    "timestamp": "2025-10-16T21:54:37.688Z",
+    "prompts": [
+      {
+        "raw": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**{{character_name}}'s Adventure: {{problem}} in the {{place}}**\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output.",
+        "label": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**{{character_name}}'s Adventure: {{problem}} in the {{place}}**\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output.",
+        "id": "3245659d8a3aa2b2d181b2dfb25bc3b33088e880c8e27ccbfba8630b0390b6a3",
+        "provider": "openai:gpt-4o-mini",
+        "metrics": {
+          "score": 1,
+          "testPassCount": 1,
+          "testFailCount": 0,
+          "testErrorCount": 0,
+          "assertPassCount": 3,
+          "assertFailCount": 0,
+          "totalLatencyMs": 7834,
+          "tokenUsage": {
+            "prompt": 293,
+            "completion": 468,
+            "cached": 0,
+            "total": 761,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 714,
+              "prompt": 660,
+              "completion": 54,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0.00032475
+        }
+      },
+      {
+        "raw": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**{{character_name}}'s Adventure: {{problem}} in the {{place}}**\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output.",
+        "label": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**{{character_name}}'s Adventure: {{problem}} in the {{place}}**\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output.",
+        "id": "3245659d8a3aa2b2d181b2dfb25bc3b33088e880c8e27ccbfba8630b0390b6a3",
+        "provider": "openai:gpt-4o",
+        "metrics": {
+          "score": 0.6666666666666666,
+          "testPassCount": 0,
+          "testFailCount": 1,
+          "testErrorCount": 0,
+          "assertPassCount": 2,
+          "assertFailCount": 1,
+          "totalLatencyMs": 9866,
+          "tokenUsage": {
+            "prompt": 293,
+            "completion": 450,
+            "cached": 0,
+            "total": 743,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 707,
+              "prompt": 643,
+              "completion": 64,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0.005232500000000001
+        }
+      },
+      {
+        "raw": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**{{character_name}}'s Adventure: {{problem}} in the {{place}}**\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output.",
+        "label": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**{{character_name}}'s Adventure: {{problem}} in the {{place}}**\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output.",
+        "id": "3245659d8a3aa2b2d181b2dfb25bc3b33088e880c8e27ccbfba8630b0390b6a3",
+        "provider": "openai:gpt-5",
+        "metrics": {
+          "score": 0.6666666666666666,
+          "testPassCount": 0,
+          "testFailCount": 1,
+          "testErrorCount": 0,
+          "assertPassCount": 2,
+          "assertFailCount": 1,
+          "totalLatencyMs": 16394,
+          "tokenUsage": {
+            "prompt": 292,
+            "completion": 945,
+            "cached": 0,
+            "total": 1237,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 640,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 551,
+              "prompt": 488,
+              "completion": 63,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0.009815
+        }
+      },
+      {
+        "raw": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**{{character_name}}'s Adventure: {{problem}} in the {{place}}**\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output.",
+        "label": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**{{character_name}}'s Adventure: {{problem}} in the {{place}}**\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output.",
+        "id": "3245659d8a3aa2b2d181b2dfb25bc3b33088e880c8e27ccbfba8630b0390b6a3",
+        "provider": "anthropic:claude-sonnet-4-5-20250929",
+        "metrics": {
+          "score": 0.6666666666666666,
+          "testPassCount": 0,
+          "testFailCount": 1,
+          "testErrorCount": 0,
+          "assertPassCount": 2,
+          "assertFailCount": 1,
+          "totalLatencyMs": 12125,
+          "tokenUsage": {
+            "prompt": 345,
+            "completion": 413,
+            "cached": 0,
+            "total": 758,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 618,
+              "prompt": 554,
+              "completion": 64,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0.00723
+        }
+      },
+      {
+        "raw": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**{{character_name}}'s Adventure: {{problem}} in the {{place}}**\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output.",
+        "label": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**{{character_name}}'s Adventure: {{problem}} in the {{place}}**\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output.",
+        "id": "3245659d8a3aa2b2d181b2dfb25bc3b33088e880c8e27ccbfba8630b0390b6a3",
+        "provider": "anthropic:claude-sonnet-4-20250514",
+        "metrics": {
+          "score": 0.6666666666666666,
+          "testPassCount": 0,
+          "testFailCount": 1,
+          "testErrorCount": 0,
+          "assertPassCount": 2,
+          "assertFailCount": 1,
+          "totalLatencyMs": 12532,
+          "tokenUsage": {
+            "prompt": 345,
+            "completion": 417,
+            "cached": 0,
+            "total": 762,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 632,
+              "prompt": 562,
+              "completion": 70,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0.0072900000000000005
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0.005232500000000001,
+        "error": "Cost 0.0052 is greater than threshold 0.001",
+        "gradingResult": {
+          "pass": false,
+          "score": 0.6666666666666666,
+          "reason": "Cost 0.0052 is greater than threshold 0.001",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 707,
+            "prompt": 643,
+            "completion": 64,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "value": "Story follows the required title format with character name and problem/place"
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "The title is 'Luna's Adventure: Breaking the Spell in the Underground Cave,' which includes the character's name (Luna) and the problem/place (Breaking the Spell in the Underground Cave). It follows the required title format.",
+              "tokensUsed": {
+                "total": 707,
+                "prompt": 643,
+                "completion": 64,
+                "cached": 0,
+                "numRequests": 0,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "cost",
+                "threshold": 0.01
+              }
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Cost 0.0052 is greater than threshold 0.001",
+              "assertion": {
+                "type": "cost",
+                "threshold": 0.001
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "296bc311-4f2e-4611-bcf6-2ee277e70e58",
+        "latencyMs": 9866,
+        "namedScores": {},
+        "prompt": {
+          "raw": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**'s Adventure:  in the **\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output.",
+          "label": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**{{character_name}}'s Adventure: {{problem}} in the {{place}}**\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output."
+        },
+        "promptId": "3245659d8a3aa2b2d181b2dfb25bc3b33088e880c8e27ccbfba8630b0390b6a3",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4o",
+          "label": ""
+        },
+        "response": {
+          "output": "**Luna's Adventure: Breaking the Spell in the Underground Cave 🧜‍♀️🌟**\n\nOnce upon a time, in a quaint little village, a bright and curious girl named Luna lived near the edge of a vast, enchanted forest 🌳. One day, while playing by a sparkling stream, Luna found a shimmering Mermaid Tail 🧜‍♀️. As soon as she touched it, the tail glowed with a soft, magical light, and Luna felt a gentle tug towards the mysterious Underground Cave nearby 🪨🌈.\n\nThe cave was known to be a place where magic danced in the shadows. Inside, Luna heard the soft murmur of the cave walls whispering old tales of a spell that needed breaking to release magic back into the village ✨. Guided by the warm glow of the Mermaid Tail, Luna ventured deeper into the cave, the soft sound of water trickling echoing like a magical serenade 🎶💧.\n\nBeneath the glimmering stalactites, Luna found a hidden pool shimmering with reflections of silver and gold. She realized with a flutter in her heart that the only way to break the spell was to place the Mermaid Tail in the water 🌊. With a deep breath and full of courage, she delicately lowered the tail into the pool. Suddenly, a bright flash lit up the cave and sparkles filled the air like twinkling stars 🌟.\n\nAs the magic unfolded, Luna discovered she had hidden powers of her own! She could understand the songs of the birds and speak with the trees 🌿🦜. The cave, once shadowed, now shined with vibrant colors, and Luna laughed with delight 😊. She realized that the true magic was not in the Mermaid Tail, but in the bravery she found within herself.\n\nWith a joyful heart, Luna returned to her village, where magic now danced freely in the air. She learned that wonders are hidden in bravery, and when you discover your true self, the world becomes the most magical place of all 🌈❤️. And from that day on, Luna was known as the brave girl with the Mermaid Tail, who brought magic back to her village and found light within the shadows. 🌟",
+          "tokenUsage": {
+            "total": 743,
+            "prompt": 293,
+            "completion": 450,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "finishReason": "stop",
+          "cost": 0.005232500000000001
+        },
+        "score": 0.6666666666666666,
+        "success": false,
+        "testCase": {
+          "assert": [
+            {
+              "type": "llm-rubric",
+              "value": "Story follows the required title format with character name and problem/place"
+            },
+            {
+              "type": "cost",
+              "threshold": 0.01
+            },
+            {
+              "type": "cost",
+              "threshold": 0.001
+            }
+          ],
+          "vars": {},
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {},
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0.00723,
+        "error": "Cost 0.0072 is greater than threshold 0.001",
+        "gradingResult": {
+          "pass": false,
+          "score": 0.6666666666666666,
+          "reason": "Cost 0.0072 is greater than threshold 0.001",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 618,
+            "prompt": 554,
+            "completion": 64,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "value": "Story follows the required title format with character name and problem/place"
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "The title is 'Luna's Adventure: The Mermaid Tail in the Underground Cave' which includes the character name (Luna), the problem/object (The Mermaid Tail), and the place (the Underground Cave), matching the required format.",
+              "tokensUsed": {
+                "total": 618,
+                "prompt": 554,
+                "completion": 64,
+                "cached": 0,
+                "numRequests": 0,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "cost",
+                "threshold": 0.01
+              }
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Cost 0.0072 is greater than threshold 0.001",
+              "assertion": {
+                "type": "cost",
+                "threshold": 0.001
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "883e8d9c-05d2-4512-9304-7c0c3c5313c8",
+        "latencyMs": 12125,
+        "namedScores": {},
+        "prompt": {
+          "raw": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**'s Adventure:  in the **\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output.",
+          "label": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**{{character_name}}'s Adventure: {{problem}} in the {{place}}**\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output."
+        },
+        "promptId": "3245659d8a3aa2b2d181b2dfb25bc3b33088e880c8e27ccbfba8630b0390b6a3",
+        "promptIdx": 3,
+        "provider": {
+          "id": "anthropic:claude-sonnet-4-5-20250929",
+          "label": ""
+        },
+        "response": {
+          "output": "# **Luna's Adventure: The Mermaid Tail in the Underground Cave** 🌊✨\n\nLuna loved exploring, and today she found something amazing! Deep in an underground cave near her grandmother's house, she discovered a shimmering mermaid tail glowing with rainbow colors. 🌈 The moment she touched it, magical sparkles danced around her fingers. But then she heard a sad voice echoing through the cave—someone needed her help!\n\n\"Please help me,\" whispered a tiny mermaid trapped inside a bubble of ice. ❄️ \"A mean sea witch put a spell on me, and I can't get out!\" Luna's heart filled with kindness. She picked up the magical mermaid tail and wrapped it around herself like a blanket. Suddenly, warm golden light filled the dark cave! ✨\n\nLuna felt something wonderful happening inside her. The mermaid tail began to glow brighter and brighter! 💫 She closed her eyes and thought about breaking the spell with all her might. To her surprise, beams of pure, sparkling light shot from her hands—she had magic powers she never knew about! The ice bubble melted away like snow in sunshine. ☀️\n\nThe little mermaid swam free and hugged Luna tight. \"You did it! You have the gift of breaking spells with your kind heart!\" she cheered. 🧜‍♀️💕 Luna realized that the mermaid tail didn't give her the power—it helped her discover the magic that was inside her all along. Together, they swam through an underground river, and Luna knew this was just the beginning of her magical adventures.\n\n**The End** 🌟\n\n*Remember: Sometimes the greatest powers are already inside you, waiting to be discovered when you help others with a kind and brave heart!* 💖",
+          "tokenUsage": {
+            "total": 758,
+            "prompt": 345,
+            "completion": 413
+          },
+          "finishReason": "stop",
+          "cost": 0.00723
+        },
+        "score": 0.6666666666666666,
+        "success": false,
+        "testCase": {
+          "assert": [
+            {
+              "type": "llm-rubric",
+              "value": "Story follows the required title format with character name and problem/place"
+            },
+            {
+              "type": "cost",
+              "threshold": 0.01
+            },
+            {
+              "type": "cost",
+              "threshold": 0.001
+            }
+          ],
+          "vars": {},
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {},
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0.009815,
+        "error": "Cost 0.0098 is greater than threshold 0.001",
+        "gradingResult": {
+          "pass": false,
+          "score": 0.6666666666666666,
+          "reason": "Cost 0.0098 is greater than threshold 0.001",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 551,
+            "prompt": 488,
+            "completion": 63,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "value": "Story follows the required title format with character name and problem/place"
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "The title is in the format 'Luna's Adventure: Breaking a Spell in the Underground Cave', which includes the character's name (Luna), the adventure/problem (Breaking a Spell), and the place (the Underground Cave)",
+              "tokensUsed": {
+                "total": 551,
+                "prompt": 488,
+                "completion": 63,
+                "cached": 0,
+                "numRequests": 0,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "cost",
+                "threshold": 0.01
+              }
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Cost 0.0098 is greater than threshold 0.001",
+              "assertion": {
+                "type": "cost",
+                "threshold": 0.001
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "8ca7f11b-de77-4fd9-8c85-92ca843a26b4",
+        "latencyMs": 16394,
+        "namedScores": {},
+        "prompt": {
+          "raw": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**'s Adventure:  in the **\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output.",
+          "label": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**{{character_name}}'s Adventure: {{problem}} in the {{place}}**\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output."
+        },
+        "promptId": "3245659d8a3aa2b2d181b2dfb25bc3b33088e880c8e27ccbfba8630b0390b6a3",
+        "promptIdx": 2,
+        "provider": {
+          "id": "openai:gpt-5",
+          "label": ""
+        },
+        "response": {
+          "output": "**Luna's Adventure: Breaking a Spell in the Underground Cave**\n\nLuna loved the glow of the moon and the whisper of the sea 🌙💙. One night, a seashell carried a tiny note: “A spell sleeps in the Underground Cave. Help, please.” She slipped on her magical Mermaid Tail and felt brave and ready to help 🧜‍♀️✨.\n\nThe cave was cool and quiet, with drip-drip sounds and a soft blue shine ⛰️💧. An underground lake sparkled like stars in water, and Luna swished her Mermaid Tail through the gentle waves 🌊⭐. Friendly fish circled her, and a silver door of sea-vines blocked the way; the spell shimmered like frost 🐟🪄.\n\nLuna listened to the cave’s heartbeat—thum, thum—and to her own steady breath 💓. She remembered that true magic grows from kindness and courage. Humming a calm moon song, she traced glowing circles with her tail, and the spell began to melt like snow in sunshine 🎶✨.\n\nThe sea-vines drifted apart, and the crystals lit up in rainbow colors 🌈. Luna felt a warm spark inside and discovered her hidden powers: her voice and heart could make light and open the way for good things to grow 😊💫. She swam home smiling, knowing that when you believe in yourself and choose kindness, your hidden powers shine the brightest.",
+          "tokenUsage": {
+            "total": 1237,
+            "prompt": 292,
+            "completion": 945,
+            "completionDetails": {
+              "reasoning": 640,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "finishReason": "stop",
+          "cost": 0.009815
+        },
+        "score": 0.6666666666666666,
+        "success": false,
+        "testCase": {
+          "assert": [
+            {
+              "type": "llm-rubric",
+              "value": "Story follows the required title format with character name and problem/place"
+            },
+            {
+              "type": "cost",
+              "threshold": 0.01
+            },
+            {
+              "type": "cost",
+              "threshold": 0.001
+            }
+          ],
+          "vars": {},
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {},
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0.0072900000000000005,
+        "error": "Cost 0.0073 is greater than threshold 0.001",
+        "gradingResult": {
+          "pass": false,
+          "score": 0.6666666666666666,
+          "reason": "Cost 0.0073 is greater than threshold 0.001",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 632,
+            "prompt": 562,
+            "completion": 70,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "value": "Story follows the required title format with character name and problem/place"
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "The title is 'Luna's Adventure: Breaking a Spell in the Underground Cave' and includes the character's name (Luna), a problem (Breaking a Spell), and a place (Underground Cave), which matches the required format.",
+              "tokensUsed": {
+                "total": 632,
+                "prompt": 562,
+                "completion": 70,
+                "cached": 0,
+                "numRequests": 0,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "cost",
+                "threshold": 0.01
+              }
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Cost 0.0073 is greater than threshold 0.001",
+              "assertion": {
+                "type": "cost",
+                "threshold": 0.001
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "cf7fe8b4-8521-4fdf-a3fc-3dc4cee52243",
+        "latencyMs": 12532,
+        "namedScores": {},
+        "prompt": {
+          "raw": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**'s Adventure:  in the **\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output.",
+          "label": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**{{character_name}}'s Adventure: {{problem}} in the {{place}}**\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output."
+        },
+        "promptId": "3245659d8a3aa2b2d181b2dfb25bc3b33088e880c8e27ccbfba8630b0390b6a3",
+        "promptIdx": 4,
+        "provider": {
+          "id": "anthropic:claude-sonnet-4-20250514",
+          "label": ""
+        },
+        "response": {
+          "output": "# **Luna's Adventure: Breaking a Spell in the Underground Cave** 🌙✨\n\nLuna loved swimming in the crystal-clear lake near her home. 🏊‍♀️ One sunny morning, she found a shimmering mermaid tail washed up on the shore! The tail sparkled like diamonds and felt warm to the touch. When Luna put it on, something magical happened—she could breathe underwater and swim faster than any fish! 🧜‍♀️💎\n\nDeep beneath the lake, Luna discovered a hidden entrance to an underground cave. 🕳️ The cave walls glowed with pretty blue and green lights, but something was wrong. All the sea creatures inside looked very sad and moved so slowly, like they were stuck in thick honey. An old sea turtle swam up to Luna and whispered, \"A mean wizard cast a sleepy spell on our home. We need someone brave to break it!\" 🐢😴\n\nLuna's heart filled with courage as she swam deeper into the cave. 💪❤️ She followed a trail of golden bubbles until she found a dark crystal floating in the center of the cave. The crystal was making everyone sleepy! Luna didn't know what to do, but then her mermaid tail began to glow brighter and brighter. She reached out and touched the crystal with her hands. 🌟💫\n\nSuddenly, Luna's tail shot out beams of rainbow light! 🌈✨ The dark crystal cracked and dissolved into sparkly dust. All the sea creatures woke up and began dancing with joy! \"You have the power of kindness and bravery,\" said the wise turtle. \"That's the strongest magic of all!\" Luna smiled as she realized she had discovered something wonderful about herself—when she wanted to help others, her heart could work real magic! 💖🎉",
+          "tokenUsage": {
+            "total": 762,
+            "prompt": 345,
+            "completion": 417
+          },
+          "finishReason": "stop",
+          "cost": 0.0072900000000000005
+        },
+        "score": 0.6666666666666666,
+        "success": false,
+        "testCase": {
+          "assert": [
+            {
+              "type": "llm-rubric",
+              "value": "Story follows the required title format with character name and problem/place"
+            },
+            {
+              "type": "cost",
+              "threshold": 0.01
+            },
+            {
+              "type": "cost",
+              "threshold": 0.001
+            }
+          ],
+          "vars": {},
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {},
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0.00032475,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 714,
+            "prompt": 660,
+            "completion": 54,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "value": "Story follows the required title format with character name and problem/place"
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "The title 'Luna's Adventure: in the Underground Cave' follows the required format by including the character's name (Luna) and the place/problem (Underground Cave).",
+              "tokensUsed": {
+                "total": 714,
+                "prompt": 660,
+                "completion": 54,
+                "cached": 0,
+                "numRequests": 0,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "cost",
+                "threshold": 0.01
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "cost",
+                "threshold": 0.001
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "5250ecb8-8e56-4731-83ef-873fa1ab08b7",
+        "latencyMs": 7834,
+        "namedScores": {},
+        "prompt": {
+          "raw": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**'s Adventure:  in the **\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output.",
+          "label": "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**{{character_name}}'s Adventure: {{problem}} in the {{place}}**\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output."
+        },
+        "promptId": "3245659d8a3aa2b2d181b2dfb25bc3b33088e880c8e27ccbfba8630b0390b6a3",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "response": {
+          "output": "**Luna's Adventure: in the Underground Cave**\n\nOnce upon a time, in a bright and shimmering village by the sea, there lived a curious girl named Luna 🌊✨. She loved to explore and dream about magical places! One sunny afternoon, Luna wandered down to the shore, where the waves danced gently. As she tipped her toes in the water, she spotted a sparkling object nestled among the rocks. It was a beautiful mermaid tail, gleaming like a rainbow 🌈. \"This must be special!\" she thought excitedly.\n\nLuna slipped the tail on and felt a warm glow spreading through her body. Suddenly, she heard a soft whisper, “Help! Help!” Following the voice, she ventured toward an underground cave hidden behind the waterfall. The cave was dark and mysterious, with twinkling crystals along the walls that looked like stars in the night sky ✨💎. In the center of the cave, Luna saw a sad mermaid trapped in a bubble! \"Oh no! I need to break this spell!\" Luna exclaimed, her heart racing with determination ❤️‍🔥.\n\nWith her magical Mermaid Tail shimmering, Luna remembered the stories of bravery her grandmother told her. She swam closer to the bubble and spoke softly to the mermaid, “You are not alone. I'm here to help!” 🐚💖. The mermaid smiled at her, a spark of hope in her eyes. Luna took a deep breath and touched the bubble with her tail, whispering magical words she didn’t even know she knew. POP! The bubble burst, scattering sparkles all around! 🌟\n\nThe mermaid was free! She jumped for joy and hugged Luna tightly. “You have broken my spell and discovered your hidden powers!” 🎉 The cave lit up with colors as the two new friends laughed and danced together. They talked about their adventures and promised to always look out for each other. From that day on, Luna not only learned that she was brave but that true magic comes from the heart and friendships we make along the way 👫💞.\n\nLuna returned home, her heart filled with joy and stories of her underwater adventure. She realized that when you share your kindness and bravery, you can achieve wonderful things. And the world around you sparkles with magic 💫. ",
+          "tokenUsage": {
+            "total": 761,
+            "prompt": 293,
+            "completion": 468,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "finishReason": "stop",
+          "cost": 0.00032475
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "assert": [
+            {
+              "type": "llm-rubric",
+              "value": "Story follows the required title format with character name and problem/place"
+            },
+            {
+              "type": "cost",
+              "threshold": 0.01
+            },
+            {
+              "type": "cost",
+              "threshold": 0.001
+            }
+          ],
+          "vars": {},
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {},
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      }
+    ],
+    "stats": {
+      "successes": 1,
+      "failures": 4,
+      "errors": 0,
+      "tokenUsage": {
+        "prompt": 1568,
+        "completion": 2693,
+        "cached": 0,
+        "total": 4261,
+        "numRequests": 5,
+        "completionDetails": {
+          "reasoning": 640,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0
+        },
+        "assertions": {
+          "total": 3222,
+          "prompt": 2907,
+          "completion": 315,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0
+          }
+        }
+      }
+    }
+  },
+  "config": {
+    "description": "Cost evaluation for model usage",
+    "prompts": [
+      "character_name: \"Luna\"\nmagical_item: \"Mermaid Tail\"\nplace: \"Underground Cave\"\nproblem: \"Breaking a Spell\"\nending: \"Discovering Hidden Powers\"\n\nYou are a creative children's author who writes heartwarming, imaginative stories for 2nd graders.\nYour task is to create a short adventure story (3–5 paragraphs) based on the following user inputs.\n\nInstructions:\n1. Write a fun and age-appropriate story that includes all of the inputs.\n2. Keep the story vocabulary simple, joyful, and suitable for 7–8-year-olds.\n3. Include friendly emojis to make the story visually engaging.\n4. Start the story with a catchy title in this format:\n   \"**{{character_name}}'s Adventure: {{problem}} in the {{place}}**\"\n5. Write in a friendly, narrative tone — imaginative, full of wonder, and easy to follow.\n6. Use descriptive imagery (colors, sounds, emotions) that sparks curiosity.\n7. End with a positive message that matches the chosen story ending (e.g., friendship, courage, or discovery).\n8. The story should read like a bedtime tale and feel magical and uplifting.\n9. Use simple paragraph structure (2–4 sentences per paragraph).\n\nOutput:\nReturn the full story in rich text (Markdown or HTML allowed).\nInclude emojis relevant to nature, magic, and emotions throughout the story.\nDo not include any setup text, only the story output."
+    ],
+    "providers": [
+      "openai:gpt-4o-mini",
+      "openai:gpt-4o",
+      "openai:gpt-5",
+      "anthropic:claude-sonnet-4-5-20250929",
+      "anthropic:claude-sonnet-4-20250514"
+    ],
+    "tests": [
+      {
+        "assert": [
+          {
+            "type": "llm-rubric",
+            "value": "Story follows the required title format with character name and problem/place"
+          },
+          {
+            "type": "cost",
+            "threshold": 0.01
+          },
+          {
+            "type": "cost",
+            "threshold": 0.001
+          }
+        ]
+      }
+    ],
+    "sharing": false,
+    "outputPath": [
+      "results.json"
+    ],
+    "extensions": []
+  },
+  "shareableUrl": null,
+  "metadata": {
+    "promptfooVersion": "0.118.11",
+    "nodeVersion": "v22.20.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "exportedAt": "2025-10-16T21:55:00.440Z",
+    "evaluationCreatedAt": "2025-10-16T21:54:37.688Z"
+  }
+}

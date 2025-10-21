@@ -1,0 +1,14 @@
+ - vars:
+    #  company: "Engenious University"
+      question: "What is your refund policy for cancelled courses?"
+
+
+      assert:
+      - type: icontains
+        value: refund
+      - type: latency
+        threshold: "15000"
+        direction: less_than
+
+
+        

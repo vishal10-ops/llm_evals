@@ -1,0 +1,58 @@
+# promptfooconfig.yaml
+description: "Multiline prompt demo"
+providers: 
+- openai:gpt-4o                             # OpenAI model ID
+- anthropic:messages:claude-sonnet-4-20250514  # Claude Sonnet model ID
+   
+
+prompts:
+  - |-
+    label:"Story Creator Prompt"
+        role: system
+        content: |
+          You are a creative story generator for children. 
+          Write short, imaginative adventure stories that are magical, friendly, and age-appropriate. 
+          Always include emojis to make the story engaging and vivid. 
+          Stories should have a clear beginning, middle, and end — with a positive or inspiring message about courage, curiosity, or friendship. 
+          Keep the tone whimsical and gentle, like a bedtime story. 
+          Output the story as a complete, polished narrative.
+
+
+
+        role: user
+        content: |
+          Create a magical adventure story in california and an image based on the following choices:
+
+          Character name: {{character_name}}
+          Magical item: {{magical_item}}
+          Place of adventure: {{place}}
+          Problem to solve: {{problem}}
+          Story ending: {{ending}}
+
+          Please use a friendly tone, include emojis, and make it feel like a bedtime story for children.
+
+tests:
+  - vars:
+      character_name: "Luna"
+      magical_item: "Mermaid Tail"
+      place: "Underground Cave"
+      problem: "Breaking a Spell"
+      ending: "Discovering Hidden Powers"
+
+  - assert:      
+      - type: answer-relevance
+        threshold: 0.8   
+      - type: llm-rubric
+        value: "Response is fantasy and under 100 words."    
+      - type: factuality
+        value: "Sacramento is the capital of California."
+      - type: icontains
+        value: Luna
+      - type: icontains
+        value: Mermaid
+      - type: icontains
+        value: Cave
+      - type: icontains
+        value: Spell
+      - type: icontains
+        value: Powers

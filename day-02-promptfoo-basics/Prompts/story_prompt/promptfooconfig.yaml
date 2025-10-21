@@ -1,0 +1,41 @@
+# promptfooconfig.yaml
+description: "Multiline prompt demo"
+providers:
+  - openai:gpt-4o                                 # OpenAI model ID
+  - anthropic:messages:claude-sonnet-4-20250514   # Claude Sonnet model ID
+
+prompts:
+  - |-
+    The main character's name is: {{character_name}}.
+    They have a magical item: {{magical_item}}.
+    The adventure takes place in: {{place}}.
+    The main problem to solve is: {{problem}}.
+    The story should end with: {{ending}}.
+
+    Use a friendly, imaginative tone, include emojis, and make it feel like a bedtime story.
+    Keep it around 3-5 paragraphs long, showing courage and discovery.
+
+tests:
+  - vars:
+      character_name: "Luna"
+      magical_item: "Mermaid Tail"
+      place: "Underground Cave"
+      problem: "Breaking a Spell"
+      ending: "Discovering Hidden Powers"
+
+    assert:
+      - type: icontains
+        value: Luna
+      - type: icontains
+        value: Mermaid
+      - type: icontains
+        value: Cave
+      - type: icontains
+        value: Spell
+      - type: icontains
+        value: Powers
+      - type: latency
+        threshold: "15000"
+        direction: less_than
+      - type: cost
+        threshold: "0.00" 
