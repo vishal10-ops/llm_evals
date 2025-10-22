@@ -1,4 +1,4 @@
-description: "Cost evaluation for model usage"
+description: "Cost evaluation for model usage..."
 
 providers:
   - openai:gpt-4o-mini
