@@ -1,5 +1,5 @@
 prompts:
-  - You are a customer support assistant. Respond to the user {{message}}
+  - You are a customer support assistant . Respond to the user {{message}}
 
 providers: - id: openai:gpt-4
 
