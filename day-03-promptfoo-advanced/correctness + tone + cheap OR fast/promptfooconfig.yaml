@@ -1,5 +1,5 @@
 # 4) French greeting: correctness + tone + (cheap OR fast)
-description: "Require a friendly French greeting that includes 'Bonjour' and stays within budget (either cheap or fast)."
+description: "Require a friendly French greeting that includes 'Bonjour' and stays within budget (either cheap or fast."
 providers:
   - openai:gpt-4o-mini
 

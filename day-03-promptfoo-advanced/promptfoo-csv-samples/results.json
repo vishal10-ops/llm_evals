@@ -1,0 +1,1755 @@
+{
+  "evalId": "eval-RzI-2025-10-23T04:33:31",
+  "results": {
+    "version": 3,
+    "timestamp": "2025-10-23T04:33:31.701Z",
+    "prompts": [
+      {
+        "raw": "Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: {{text}}\n\nResponse (JSON only):",
+        "label": "prompts/sentiment_prompt.txt: Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: {{text}}\n\nResponse (JSON only):",
+        "id": "9a428229b78dcbc8fccd4e031be2cba18a10990a8a42ba377e4edc0f9743a6eb",
+        "provider": "openai:gpt-4o-mini",
+        "metrics": {
+          "score": 7.5,
+          "testPassCount": 5,
+          "testFailCount": 5,
+          "testErrorCount": 0,
+          "assertPassCount": 35,
+          "assertFailCount": 5,
+          "totalLatencyMs": 883,
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 631,
+            "total": 631,
+            "numRequests": 10,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {
+            "accuracy": 10,
+            "true_positives": 5,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "precision": 1,
+            "recall": 1,
+            "f1_score": 1
+          },
+          "namedScoresCount": {
+            "accuracy": 10,
+            "true_positives": 10,
+            "false_positives": 10,
+            "false_negatives": 10
+          },
+          "cost": 0.00012615
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0.000012899999999999998,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {
+            "accuracy": 1,
+            "true_positives": 1,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+                "metric": "accuracy"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "true_positives",
+                "weight": 1,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+                "metric": "false_positives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "false_negatives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            }
+          ]
+        },
+        "id": "3118ce52-f6bf-4012-9f25-5a96c9dd1cc2",
+        "latencyMs": 6,
+        "namedScores": {
+          "accuracy": 1,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "prompt": {
+          "raw": "Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: This product is amazing! I love it!\n\nResponse (JSON only):",
+          "label": "prompts/sentiment_prompt.txt: Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: {{text}}\n\nResponse (JSON only):"
+        },
+        "promptId": "9a428229b78dcbc8fccd4e031be2cba18a10990a8a42ba377e4edc0f9743a6eb",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "response": {
+          "output": "{\"sentiment\": \"positive\"}",
+          "tokenUsage": {
+            "cached": 65,
+            "total": 65
+          },
+          "cached": true,
+          "finishReason": "stop",
+          "cost": 0.000012899999999999998,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "text": "This product is amazing! I love it!",
+            "sentiment": "positive"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+              "metric": "accuracy"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "true_positives",
+              "weight": 1,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "metric": "false_positives",
+              "weight": 0,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "false_negatives",
+              "weight": 0,
+              "aggregate": "sum"
+            }
+          ],
+          "options": {},
+          "description": "Positive: enthusiastic review",
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {
+          "text": "This product is amazing! I love it!",
+          "sentiment": "positive"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.000012599999999999998,
+        "error": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+        "gradingResult": {
+          "pass": false,
+          "score": 0.5,
+          "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+          "namedScores": {
+            "accuracy": 1,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+                "metric": "accuracy"
+              }
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "true_positives",
+                "weight": 1,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+                "metric": "false_positives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "false_negatives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            }
+          ]
+        },
+        "id": "4dd6858f-9b96-4128-b6e1-f3b45b8a692b",
+        "latencyMs": 268,
+        "namedScores": {
+          "accuracy": 1,
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "prompt": {
+          "raw": "Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: Absolutely terrible experience. Very disappointed.\n\nResponse (JSON only):",
+          "label": "prompts/sentiment_prompt.txt: Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: {{text}}\n\nResponse (JSON only):"
+        },
+        "promptId": "9a428229b78dcbc8fccd4e031be2cba18a10990a8a42ba377e4edc0f9743a6eb",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "response": {
+          "output": "{\"sentiment\": \"negative\"}",
+          "tokenUsage": {
+            "cached": 63,
+            "total": 63
+          },
+          "cached": true,
+          "finishReason": "stop",
+          "cost": 0.000012599999999999998,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 0.5,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "text": "Absolutely terrible experience. Very disappointed.",
+            "sentiment": "negative"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+              "metric": "accuracy"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "true_positives",
+              "weight": 1,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "metric": "false_positives",
+              "weight": 0,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "false_negatives",
+              "weight": 0,
+              "aggregate": "sum"
+            }
+          ],
+          "options": {},
+          "description": "Negative: strong disappointment",
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "vars": {
+          "text": "Absolutely terrible experience. Very disappointed.",
+          "sentiment": "negative"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0.000012599999999999998,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {
+            "accuracy": 1,
+            "true_positives": 1,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+                "metric": "accuracy"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "true_positives",
+                "weight": 1,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+                "metric": "false_positives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "false_negatives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            }
+          ]
+        },
+        "id": "b69595b0-a43e-482a-9ac7-660b3c604afe",
+        "latencyMs": 272,
+        "namedScores": {
+          "accuracy": 1,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "prompt": {
+          "raw": "Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: Best purchase ever! Highly recommend!\n\nResponse (JSON only):",
+          "label": "prompts/sentiment_prompt.txt: Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: {{text}}\n\nResponse (JSON only):"
+        },
+        "promptId": "9a428229b78dcbc8fccd4e031be2cba18a10990a8a42ba377e4edc0f9743a6eb",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "response": {
+          "output": "{\"sentiment\": \"positive\"}",
+          "tokenUsage": {
+            "cached": 63,
+            "total": 63
+          },
+          "cached": true,
+          "finishReason": "stop",
+          "cost": 0.000012599999999999998,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "text": "Best purchase ever! Highly recommend!",
+            "sentiment": "positive"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+              "metric": "accuracy"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "true_positives",
+              "weight": 1,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "metric": "false_positives",
+              "weight": 0,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "false_negatives",
+              "weight": 0,
+              "aggregate": "sum"
+            }
+          ],
+          "options": {},
+          "description": "Positive: strong recommendation",
+          "metadata": {}
+        },
+        "testIdx": 2,
+        "vars": {
+          "text": "Best purchase ever! Highly recommend!",
+          "sentiment": "positive"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.000012749999999999998,
+        "error": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+        "gradingResult": {
+          "pass": false,
+          "score": 0.5,
+          "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+          "namedScores": {
+            "accuracy": 1,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+                "metric": "accuracy"
+              }
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "true_positives",
+                "weight": 1,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+                "metric": "false_positives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "false_negatives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            }
+          ]
+        },
+        "id": "ba83b04c-0dc8-45b1-9070-9d0f760ebb55",
+        "latencyMs": 276,
+        "namedScores": {
+          "accuracy": 1,
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "prompt": {
+          "raw": "Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: Waste of money. Do not buy.\n\nResponse (JSON only):",
+          "label": "prompts/sentiment_prompt.txt: Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: {{text}}\n\nResponse (JSON only):"
+        },
+        "promptId": "9a428229b78dcbc8fccd4e031be2cba18a10990a8a42ba377e4edc0f9743a6eb",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "response": {
+          "output": "{\"sentiment\": \"negative\"}",
+          "tokenUsage": {
+            "cached": 64,
+            "total": 64
+          },
+          "cached": true,
+          "finishReason": "stop",
+          "cost": 0.000012749999999999998,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 0.5,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "text": "Waste of money. Do not buy.",
+            "sentiment": "negative"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+              "metric": "accuracy"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "true_positives",
+              "weight": 1,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "metric": "false_positives",
+              "weight": 0,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "false_negatives",
+              "weight": 0,
+              "aggregate": "sum"
+            }
+          ],
+          "options": {},
+          "description": "Negative: strong warning",
+          "metadata": {}
+        },
+        "testIdx": 3,
+        "vars": {
+          "text": "Waste of money. Do not buy.",
+          "sentiment": "negative"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0.000012449999999999998,
+        "error": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+        "gradingResult": {
+          "pass": false,
+          "score": 0.5,
+          "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+          "namedScores": {
+            "accuracy": 1,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+                "metric": "accuracy"
+              }
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "true_positives",
+                "weight": 1,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+                "metric": "false_positives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "false_negatives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            }
+          ]
+        },
+        "id": "bea97c34-fd9c-4b22-bbd8-de138a84bfc5",
+        "latencyMs": 14,
+        "namedScores": {
+          "accuracy": 1,
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "prompt": {
+          "raw": "Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: It's okay, nothing special.\n\nResponse (JSON only):",
+          "label": "prompts/sentiment_prompt.txt: Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: {{text}}\n\nResponse (JSON only):"
+        },
+        "promptId": "9a428229b78dcbc8fccd4e031be2cba18a10990a8a42ba377e4edc0f9743a6eb",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "response": {
+          "output": "{\"sentiment\": \"neutral\"}",
+          "tokenUsage": {
+            "cached": 62,
+            "total": 62
+          },
+          "cached": true,
+          "finishReason": "stop",
+          "cost": 0.000012449999999999998,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 0.5,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "text": "It's okay, nothing special.",
+            "sentiment": "neutral"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+              "metric": "accuracy"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "true_positives",
+              "weight": 1,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "metric": "false_positives",
+              "weight": 0,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "false_negatives",
+              "weight": 0,
+              "aggregate": "sum"
+            }
+          ],
+          "options": {},
+          "description": "Neutral: ambiguous sentiment",
+          "metadata": {}
+        },
+        "testIdx": 4,
+        "vars": {
+          "text": "It's okay, nothing special.",
+          "sentiment": "neutral"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0.000012449999999999998,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {
+            "accuracy": 1,
+            "true_positives": 1,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+                "metric": "accuracy"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "true_positives",
+                "weight": 1,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+                "metric": "false_positives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "false_negatives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            }
+          ]
+        },
+        "id": "5619ddbc-d687-4370-b99d-6d8ad3b5435c",
+        "latencyMs": 12,
+        "namedScores": {
+          "accuracy": 1,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "prompt": {
+          "raw": "Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: Exceeded all my expectations!\n\nResponse (JSON only):",
+          "label": "prompts/sentiment_prompt.txt: Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: {{text}}\n\nResponse (JSON only):"
+        },
+        "promptId": "9a428229b78dcbc8fccd4e031be2cba18a10990a8a42ba377e4edc0f9743a6eb",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "response": {
+          "output": "{\"sentiment\": \"positive\"}",
+          "tokenUsage": {
+            "cached": 62,
+            "total": 62
+          },
+          "cached": true,
+          "finishReason": "stop",
+          "cost": 0.000012449999999999998,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "text": "Exceeded all my expectations!",
+            "sentiment": "positive"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+              "metric": "accuracy"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "true_positives",
+              "weight": 1,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "metric": "false_positives",
+              "weight": 0,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "false_negatives",
+              "weight": 0,
+              "aggregate": "sum"
+            }
+          ],
+          "options": {},
+          "description": "Positive: exceeded expectations",
+          "metadata": {}
+        },
+        "testIdx": 5,
+        "vars": {
+          "text": "Exceeded all my expectations!",
+          "sentiment": "positive"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.000012899999999999998,
+        "error": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+        "gradingResult": {
+          "pass": false,
+          "score": 0.5,
+          "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+          "namedScores": {
+            "accuracy": 1,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+                "metric": "accuracy"
+              }
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "true_positives",
+                "weight": 1,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+                "metric": "false_positives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "false_negatives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            }
+          ]
+        },
+        "id": "ebacb05e-324c-4ece-8fbb-7c384b9bc0cc",
+        "latencyMs": 9,
+        "namedScores": {
+          "accuracy": 1,
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "prompt": {
+          "raw": "Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: Horrible quality, broke after one use.\n\nResponse (JSON only):",
+          "label": "prompts/sentiment_prompt.txt: Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: {{text}}\n\nResponse (JSON only):"
+        },
+        "promptId": "9a428229b78dcbc8fccd4e031be2cba18a10990a8a42ba377e4edc0f9743a6eb",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "response": {
+          "output": "{\"sentiment\": \"negative\"}",
+          "tokenUsage": {
+            "cached": 65,
+            "total": 65
+          },
+          "cached": true,
+          "finishReason": "stop",
+          "cost": 0.000012899999999999998,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 0.5,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "text": "Horrible quality, broke after one use.",
+            "sentiment": "negative"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+              "metric": "accuracy"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "true_positives",
+              "weight": 1,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "metric": "false_positives",
+              "weight": 0,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "false_negatives",
+              "weight": 0,
+              "aggregate": "sum"
+            }
+          ],
+          "options": {},
+          "description": "Negative: quality complaint",
+          "metadata": {}
+        },
+        "testIdx": 6,
+        "vars": {
+          "text": "Horrible quality, broke after one use.",
+          "sentiment": "negative"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0.000012449999999999998,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {
+            "accuracy": 1,
+            "true_positives": 1,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+                "metric": "accuracy"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "true_positives",
+                "weight": 1,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+                "metric": "false_positives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "false_negatives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            }
+          ]
+        },
+        "id": "05485ee7-7c9d-4400-980d-ca0ccdb2b690",
+        "latencyMs": 9,
+        "namedScores": {
+          "accuracy": 1,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "prompt": {
+          "raw": "Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: Great value for the price!\n\nResponse (JSON only):",
+          "label": "prompts/sentiment_prompt.txt: Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: {{text}}\n\nResponse (JSON only):"
+        },
+        "promptId": "9a428229b78dcbc8fccd4e031be2cba18a10990a8a42ba377e4edc0f9743a6eb",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "response": {
+          "output": "{\"sentiment\": \"positive\"}",
+          "tokenUsage": {
+            "cached": 62,
+            "total": 62
+          },
+          "cached": true,
+          "finishReason": "stop",
+          "cost": 0.000012449999999999998,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "text": "Great value for the price!",
+            "sentiment": "positive"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+              "metric": "accuracy"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "true_positives",
+              "weight": 1,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "metric": "false_positives",
+              "weight": 0,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "false_negatives",
+              "weight": 0,
+              "aggregate": "sum"
+            }
+          ],
+          "options": {},
+          "description": "Positive: value statement",
+          "metadata": {}
+        },
+        "testIdx": 7,
+        "vars": {
+          "text": "Great value for the price!",
+          "sentiment": "positive"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.000012449999999999998,
+        "error": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+        "gradingResult": {
+          "pass": false,
+          "score": 0.5,
+          "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+          "namedScores": {
+            "accuracy": 1,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+                "metric": "accuracy"
+              }
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "true_positives",
+                "weight": 1,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+                "metric": "false_positives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "false_negatives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            }
+          ]
+        },
+        "id": "24f8e9c0-012b-4f70-a8cf-7214bbb55996",
+        "latencyMs": 9,
+        "namedScores": {
+          "accuracy": 1,
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "prompt": {
+          "raw": "Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: Not worth it at all.\n\nResponse (JSON only):",
+          "label": "prompts/sentiment_prompt.txt: Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: {{text}}\n\nResponse (JSON only):"
+        },
+        "promptId": "9a428229b78dcbc8fccd4e031be2cba18a10990a8a42ba377e4edc0f9743a6eb",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "response": {
+          "output": "{\"sentiment\": \"negative\"}",
+          "tokenUsage": {
+            "cached": 62,
+            "total": 62
+          },
+          "cached": true,
+          "finishReason": "stop",
+          "cost": 0.000012449999999999998,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 0.5,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "text": "Not worth it at all.",
+            "sentiment": "negative"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+              "metric": "accuracy"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "true_positives",
+              "weight": 1,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "metric": "false_positives",
+              "weight": 0,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "false_negatives",
+              "weight": 0,
+              "aggregate": "sum"
+            }
+          ],
+          "options": {},
+          "description": "Negative: not worth it",
+          "metadata": {}
+        },
+        "testIdx": 8,
+        "vars": {
+          "text": "Not worth it at all.",
+          "sentiment": "negative"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0.000012599999999999998,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {
+            "accuracy": 1,
+            "true_positives": 1,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+                "metric": "accuracy"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "true_positives",
+                "weight": 1,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+                "metric": "false_positives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            },
+            {
+              "pass": true,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+                "metric": "false_negatives",
+                "weight": 0,
+                "aggregate": "sum"
+              }
+            }
+          ]
+        },
+        "id": "b55602f1-8dfe-49a6-830c-9c77cca00e7a",
+        "latencyMs": 8,
+        "namedScores": {
+          "accuracy": 1,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "prompt": {
+          "raw": "Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: Perfect! Exactly what I needed.\n\nResponse (JSON only):",
+          "label": "prompts/sentiment_prompt.txt: Analyze the sentiment of the following text and respond with ONLY a JSON object in this format:\n{\"sentiment\": \"positive\" or \"negative\" or \"neutral\"}\n\nText to analyze: {{text}}\n\nResponse (JSON only):"
+        },
+        "promptId": "9a428229b78dcbc8fccd4e031be2cba18a10990a8a42ba377e4edc0f9743a6eb",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "response": {
+          "output": "{\"sentiment\": \"positive\"}",
+          "tokenUsage": {
+            "cached": 63,
+            "total": 63
+          },
+          "cached": true,
+          "finishReason": "stop",
+          "cost": 0.000012599999999999998,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "text": "Perfect! Exactly what I needed.",
+            "sentiment": "positive"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+              "metric": "accuracy"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "true_positives",
+              "weight": 1,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+              "metric": "false_positives",
+              "weight": 0,
+              "aggregate": "sum"
+            },
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+              "metric": "false_negatives",
+              "weight": 0,
+              "aggregate": "sum"
+            }
+          ],
+          "options": {},
+          "description": "Positive: meets expectations",
+          "metadata": {}
+        },
+        "testIdx": 9,
+        "vars": {
+          "text": "Perfect! Exactly what I needed.",
+          "sentiment": "positive"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      }
+    ],
+    "stats": {
+      "successes": 5,
+      "failures": 5,
+      "errors": 0,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 631,
+        "total": 631,
+        "numRequests": 10,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0
+          }
+        }
+      }
+    }
+  },
+  "config": {
+    "tags": {},
+    "description": "F-Score Classification Example - Sentiment Analysis",
+    "prompts": [
+      "file:///Users/vishal/how-to-test-ai/day-03-promptfoo-advanced/promptfoo-csv-samples/prompts/sentiment_prompt.txt"
+    ],
+    "providers": [
+      {
+        "id": "openai:gpt-4o-mini",
+        "config": {
+          "temperature": 0,
+          "response_format": {
+            "type": "json_object"
+          }
+        }
+      }
+    ],
+    "tests": [
+      {
+        "vars": {
+          "text": "This product is amazing! I love it!",
+          "sentiment": "positive"
+        },
+        "assert": [],
+        "options": {},
+        "description": "Positive: enthusiastic review"
+      },
+      {
+        "vars": {
+          "text": "Absolutely terrible experience. Very disappointed.",
+          "sentiment": "negative"
+        },
+        "assert": [],
+        "options": {},
+        "description": "Negative: strong disappointment"
+      },
+      {
+        "vars": {
+          "text": "Best purchase ever! Highly recommend!",
+          "sentiment": "positive"
+        },
+        "assert": [],
+        "options": {},
+        "description": "Positive: strong recommendation"
+      },
+      {
+        "vars": {
+          "text": "Waste of money. Do not buy.",
+          "sentiment": "negative"
+        },
+        "assert": [],
+        "options": {},
+        "description": "Negative: strong warning"
+      },
+      {
+        "vars": {
+          "text": "It's okay, nothing special.",
+          "sentiment": "neutral"
+        },
+        "assert": [],
+        "options": {},
+        "description": "Neutral: ambiguous sentiment"
+      },
+      {
+        "vars": {
+          "text": "Exceeded all my expectations!",
+          "sentiment": "positive"
+        },
+        "assert": [],
+        "options": {},
+        "description": "Positive: exceeded expectations"
+      },
+      {
+        "vars": {
+          "text": "Horrible quality, broke after one use.",
+          "sentiment": "negative"
+        },
+        "assert": [],
+        "options": {},
+        "description": "Negative: quality complaint"
+      },
+      {
+        "vars": {
+          "text": "Great value for the price!",
+          "sentiment": "positive"
+        },
+        "assert": [],
+        "options": {},
+        "description": "Positive: value statement"
+      },
+      {
+        "vars": {
+          "text": "Not worth it at all.",
+          "sentiment": "negative"
+        },
+        "assert": [],
+        "options": {},
+        "description": "Negative: not worth it"
+      },
+      {
+        "vars": {
+          "text": "Perfect! Exactly what I needed.",
+          "sentiment": "positive"
+        },
+        "assert": [],
+        "options": {},
+        "description": "Positive: meets expectations"
+      }
+    ],
+    "scenarios": [],
+    "env": {},
+    "sharing": false,
+    "defaultTest": {
+      "assert": [
+        {
+          "type": "javascript",
+          "value": "JSON.parse(output).sentiment === context.vars.sentiment",
+          "metric": "accuracy"
+        },
+        {
+          "type": "javascript",
+          "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'positive' ? 1 : 0",
+          "metric": "true_positives",
+          "weight": 1,
+          "aggregate": "sum"
+        },
+        {
+          "type": "javascript",
+          "value": "JSON.parse(output).sentiment === 'positive' && context.vars.sentiment === 'negative' ? 1 : 0",
+          "metric": "false_positives",
+          "weight": 0,
+          "aggregate": "sum"
+        },
+        {
+          "type": "javascript",
+          "value": "JSON.parse(output).sentiment === 'negative' && context.vars.sentiment === 'positive' ? 1 : 0",
+          "metric": "false_negatives",
+          "weight": 0,
+          "aggregate": "sum"
+        }
+      ],
+      "vars": {},
+      "options": {},
+      "metadata": {}
+    },
+    "derivedMetrics": [
+      {
+        "name": "precision",
+        "value": "true_positives / (true_positives + false_positives)"
+      },
+      {
+        "name": "recall",
+        "value": "true_positives / (true_positives + false_negatives)"
+      },
+      {
+        "name": "f1_score",
+        "value": "2 * true_positives / (2 * true_positives + false_positives + false_negatives)"
+      }
+    ],
+    "outputPath": [
+      "results.json"
+    ],
+    "extensions": [],
+    "metadata": {},
+    "evaluateOptions": {}
+  },
+  "shareableUrl": null,
+  "metadata": {
+    "promptfooVersion": "0.118.17",
+    "nodeVersion": "v22.20.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "exportedAt": "2025-10-23T04:33:32.023Z",
+    "evaluationCreatedAt": "2025-10-23T04:33:31.701Z"
+  }
+}

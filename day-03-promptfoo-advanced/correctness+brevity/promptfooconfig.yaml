@@ -1,5 +1,5 @@
 # 2) Factual single-answer QA: correctness + brevity
-description: "Check that the capital is correct ('Sacramento'), on-topic, and returned as a short answer."
+description: "Check that the capital is correct 'Sacramento', on-topic, and returned as a short answer."
 providers:
   - openai:gpt-4o-mini
 

@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
-description: "CSV Format Test Examples"
+description: "CSV Format Test Example"
 
 prompts:
   - file://prompts/prompt.txt

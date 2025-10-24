@@ -1,5 +1,5 @@
 # 4) EN→FR translation: exactness + naturalness + performance
-description: "Translate to French with priority on exactness; accept a close variant; ensure fluent output and keep within cost/latency."
+description: "Translate to French with priority on exactness; accept a close variant; ensure fluent output and keep within cost/latency"
 providers:
   - id: openai:gpt-4.1
     config:
