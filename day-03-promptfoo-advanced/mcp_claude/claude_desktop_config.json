@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "promptfoo": {
+      "command": "python3",
+      "args": ["/Users/vishal/how-to-test-ai/day-03-promptfoo-advanced/mcp_claude/mcp_server.py"],
+      "env": {}
+    }
+  }
+}

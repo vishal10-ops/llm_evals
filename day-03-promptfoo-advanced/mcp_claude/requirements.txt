@@ -1,0 +1,6 @@
+# MCP (Model Context Protocol) dependencies
+mcp>=1.0.0
+
+# Additional development dependencies (optional)
+# mcp[cli]  # For mcp dev command
+# mcp[dev]  # For development tools
