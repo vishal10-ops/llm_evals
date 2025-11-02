@@ -1,0 +1,25 @@
+description: 'WeOptimize.ai - Testing'
+
+prompts:
+  -| 
+    'What is the status of the ticket {{ticket}}'
+     give me response as I am doing API testing in json
+
+providers:      # WeOptimize.ai provider configuration will be give by devs
+  - id: 'https://api.weoptimize.ai/chats/promptfoo'
+    config:
+      method: 'POST'
+      headers:
+        'Content-Type': 'application/json'
+        'x-api-key': '6e37c5dcf90692322057e2be4dd20addb06aa2cf6b485547432e88a0738dcf8c'
+      body:
+        email: 'vishal.sjce10@gmail.com'
+        message: '{{prompt}}'
+      transformResponse: 'json.message'
+
+tests:
+  - vars:
+      ticket: HFLO-69 View list of visitors
+    assert:
+      - type: contains
+        value: 'Unresolved'

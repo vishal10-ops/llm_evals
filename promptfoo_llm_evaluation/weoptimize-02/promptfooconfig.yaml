@@ -1,0 +1,28 @@
+description: 'WeOptimize.ai - Testing'
+
+prompts:
+  - file://weop.json
+
+providers:
+  - id: 'https://api.weoptimize.ai/chats/promptfoo/session'
+    config:
+      method: 'POST'
+      headers:
+        'Content-Type': 'application/json'
+        'x-api-key': '6e37c5dcf90692322057e2be4dd20addb06aa2cf6b485547432e88a0738dcf8c'
+      body:
+        email: 'vishal.sjce10@gmail.com'
+        messages: '{{prompt}}'
+      transformResponse: 'json.message'
+
+tests:
+  - vars:
+      ticket: Engenious University
+
+    assert:
+      - type: contains
+        value: 'https://'
+      # - type: contains-any  
+        # value: ['Unresolved', 'In Progress', 'Resolved', 'Closed']
+      # - type: regex
+      #   value: 'HFLO-(?:47|64|66|67|68|69|84|97|108)'

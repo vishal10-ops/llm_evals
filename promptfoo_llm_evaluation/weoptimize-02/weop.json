@@ -1,0 +1,7 @@
+[
+  { "role": "user", "content": "hi" },
+  { "role": "assistant", "content": "Hello! 👋 How can I assist you today? If you have any questions about our processes, policies, or resources, feel free to ask!"},
+  { "role": "user", "content": "your are designed for what purpose?"},
+  { "role": "assistant", "content": "I am designed to provide institutional knowledge for employees of Engenious University. My main purpose is to help you navigate company resources, understand processes, and access relevant information efficiently. If you have any specific questions or need assistance with something related to the organization, feel free to ask!"},
+  { "role": "user", "content": "give me the url for {{ticket}}"}
+]
